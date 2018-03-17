@@ -1,0 +1,14 @@
+
+<div class="search-bar">
+
+<div class="search-wrap">	
+	<input type="text" #searchTitle placeholder="Search by Movie title..">
+	<a href="#" class="btn btn-search" (click)="getMovie(searchTitle.value)">Get Movie</a>
+</div>
+</div>
+
+<div class="collection-wrap">
+	<h2>My movie Collection: </h2>
+	<a href="#"  class="btn btn-clear" (click)="clearMovies()"> Clear Collection</a>
+<app-movie *ngFor="let id of idCollection" [ID]="id" (click)="destroyEl(id)"> </app-movie>
+</div>		
