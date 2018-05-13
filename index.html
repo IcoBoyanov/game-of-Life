@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./styles/main.css">
+	
+	<script src="./js/game.js"></script>
+</head>
+<body>
+	<h1> Game of life!</h1>
+
+	<div class="game_stats bar">
+		<span class="game_stats_item"> Generation: <i id="gen_count"> 0</i></span>
+		<span class="game_stats_item"> Number of alive cells: <i id="cell_count"> 0</i></span>
+		<span class="game_stats_item"> Total births: <i> 0</i></span>
+		<a href="#" onclick="startGame()">Play</a>
+		<a href="#" onclick="stopGame()">Stop</a>
+		<a href="#" onclick="randomSeed()">Random Seed</a>
+	</div>
+
+	<div class="canvas_wrap wrap">
+		<canvas id="canvas" width="600px" height="400px"></canvas>
+	</div>
+	<script src="./js/game.js"></script>
+
+</body>
+</html>
