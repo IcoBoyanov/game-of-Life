@@ -1,1 +1,1 @@
-# movie-app
+# Game of Life simulation
